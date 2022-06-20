@@ -5,5 +5,5 @@ FROM openjdk:16-alpine3.13
 COPY WebProgramming_Project/target/fashionstore-0.0.1-SNAPSHOT.jar fashionstore-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8080
-
+WORKDIR .
 CMD ["java","-jar","/fashionstore-0.0.1-SNAPSHOT.jar"]
