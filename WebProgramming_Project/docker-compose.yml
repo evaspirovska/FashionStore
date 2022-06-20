@@ -3,8 +3,8 @@ services:
   fashionStore:
     image: fashionstore-0.0.1-SNAPSHOT.jar
     build:
-      context: WebProgramming_Project
-      dockerfile: WebProgramming_Project/Dockerfile
+      context: ./WebProgramming_Project
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
   #  Create a service named db.
